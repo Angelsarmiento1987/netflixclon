@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+}
+@font-face{/* para agregar fuentes descargadas*/
+    font-family: "NetflixSans-Bold";
+    src: url(./fonts/NetflixSans-Bold.woff2);
+}
+@font-face{
+    font-family: "NetflixSans-Light";
+    src: url(./fonts/NetflixSans-Light.woff2);
+}
+
+body{
+background-color: #222;
+
+
+
+  
+    
+}
+.hero{
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./img/fondopantalla2.jpg);/* aqui genere el gradiente de opacidad para la imagen cargada de fondo, el ultimo valor 0.5 es el ALPHA que nos da el nivel de opacidad en la imagen*/
+height: 100vh; /*aqui especifique que el alto de la imagen de fondo en mi elemento hero sea el del total de la pantalla grafica*/
+
+}
+.contenedorHero{
+    display: flex;
+ justify-content: space-between;
+ margin-left: 33px;
+ margin-right: 53px;
+ margin-top: 0px;
+
+
+}
+
+.logo{
+    width: 200px;
+}
+.contenedorBoton{
+    display: flex;
+   align-items: center;
+ 
+
+    
+}
+.iniciarSesion{
+    background-color: #e50914;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 17px;
+   font-size: 1rem;
+
+}
+.contenedorTextoHero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 300px;
+    margin-right: 300px;
+  
+    
+}
+.contenedorTextoHero h1{
+font-family: NetflixSans-Bold;
+color: white;
+font-size: 60px;
+margin-bottom: 10px;
+
+
+}
+.contenedorTextoHero h2{
+    font-family: NetflixSans-Light;
+    margin-bottom: 30px;
+}
+.mailUser{
+    font-family: NetflixSans-Light ;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.contenedorMail{
+    display: flex;
+    justify-content: center;
+    
+}
+.inputMail{/*trabajo sobre las clases creadas para los inputs*/
+    width: 500px;
+    height: 60px;
+}
+.inputEnviar{
+    width: 200px ;
+    height: 67px;
+    background-color: #e50914;
+    color: white;
+    font-family:NetflixSans-Light ;
+    font-size: 30px;
+    border: 0px;
+
+}
+.seccionTV{
+    margin-top: 10px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+.seccionTV img{
+    width: 500px;
+    margin-right: 200px;
+    position: relative;/*tuve que generar que la imagen sea un position relative para que me permita utilizar el z-index para ubicarla encima del video */
+    z-index: 1;
+   
+}
+.videoTV{
+    position: relative;
+    bottom: 300px;
+    left: 60px;
+   
+   }
+.contenedorTextoTv{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 200px;
+margin-right: 50px;
+
+}
+.seccionCelu{
+    margin-top: 10px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorTextoTv h2{
+    font-family: NetflixSans-Bold;
+    font-size: 45px;
+    
+}
+.contenedorTextoTv p{
+    font-family:NetflixSans-Light ;
+    font-size: 25px;
+
+}
+.contenedorImgCelu{
+    margin-right: 50px;
+    margin-left: 200px;
+}
+.imgCelu{
+    width: 450px;
+}
+.contenedorTextoCelu{
+margin-right: 200px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+
+}
+.contenedorTextoCelu h2{
+    font-family: NetflixSans-Bold;
+    font-size: 45px;
+
+}
+.contenedorTextoCelu p{
+    font-family:NetflixSans-Light ;
+    font-size: 25px;
+
+}
+
+.piePagina{
+    margin-top: 10px;
+    height: 400px;
+    background-color: black;
+    color: #737373
+}
+a{
+    color: #737373;
+    font-family: NetflixSans-Light;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+
+}
+.contenedorListas{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+
+   
+}
+.listas{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+
+   
+}
+.preguntas h3{
+    text-align: start;
+    font-family: NetflixSans-Light;
+    margin-left: 350px;
+    padding-top: 50px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
